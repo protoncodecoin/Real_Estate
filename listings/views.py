@@ -4,7 +4,7 @@ def index(request):
     return render (request, 'listings/listings.html')
 
 def listing(request):
-    return render (request, 'listngs/listing.html')
+    return render (request, 'listings/listing.html')
 
 def search(request):
     return render (request, 'listings/search.html')
