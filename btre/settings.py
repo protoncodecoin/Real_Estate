@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
+    'realtors.apps.RealtorsConfig',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btre',
+        'NAME': 'gol_estate',
         'USER': 'postgres',
         'PASSWORD': 'sistercharmings@531778',
         'HOST': 'localhost'
@@ -125,6 +126,11 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR,    'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'btre/static')]
+
+# Media folder settings
+MEDIA_FOOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
