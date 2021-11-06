@@ -17,3 +17,6 @@ div.breadcrumbs {
 div.breadcrumbs a {
     color: #333;
 }
+a:link, a:visited {
+    color: salmon;
+}
