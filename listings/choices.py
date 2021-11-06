@@ -55,7 +55,7 @@ state_choices = {
     "MT": "Montana",
     "NE":"Nebraska",
     "NV": "Nevada",
-    "NH": "New Hampshire"
+    "NH": "New Hampshire",
     "NJ": "New Jersey",
     "NM": "New Mexico",
     "NY": "New York",
