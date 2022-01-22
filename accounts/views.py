@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 def register(request):
     if request.method == "POST":
-        # GEt form values
+        # Get form values
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
         username = request.POST['username']
@@ -16,6 +16,7 @@ def register(request):
         
         # check if passwords match
         if password == password2:
+            # Check username
             if User.objects.filter(username = username).exists():
                 messages.error(request, 'That username is taken')
                 return redirect('register')
