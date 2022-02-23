@@ -1,9 +1,8 @@
 from django.shortcuts import get_object_or_404, render
-from .choices import state_choices, price_choices, bedroom_choices
-import listings
-
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from .choices import state_choices, price_choices, bedroom_choices 
 from .models import Listing
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator 
+
 
 def index(request):
     listings = Listing.objects.order_by("-list_date").filter(is_published=True)
@@ -13,7 +12,8 @@ def index(request):
     paged_listings = paginator.get_page(page)
 
     context ={
-        'listings':paged_listings
+        'listings':paged_listings,
+        
     }
 
     return render (request, 'listings/listings.html', context)
