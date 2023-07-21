@@ -16,4 +16,5 @@ new listings, realtor of the month functionality and an admin panel to manage th
   <li>Realtors</li>
   <li>Listings</li>
   <li>Contact</li>
+  <li>SignUp and SignIn</li>
 </ul>
